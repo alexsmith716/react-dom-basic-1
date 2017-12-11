@@ -1,28 +1,22 @@
 
 body,
-html,
-#app {
-  height: 100%;
-}
-
-body,
 h1, h2, h3, h4, h5,
 p, td, span, div {
   padding: 0;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #009900;
+  background-color: #F7F7F7;
 }
 
 #app {
   padding: 1em;
-  background-color: #000000;
+  background-color: #BCD2EE;
 }
 
 article>header {
   font-family: Verdana, sans-serif;
   font-size: 1.2em;
-  color: #FFD700;
+  color: #27408B;
   border-bottom: solid 2px #838B83;
   margin-bottom: 1em;
 }
@@ -30,6 +24,5 @@ article>header {
 div.gists>section {
   border: double 4px #CD3700;
   padding: 1em;
-  background-color: #990099;
-  margin-bottom: 1em;
+  background-color: #EBEBEB;
 }
