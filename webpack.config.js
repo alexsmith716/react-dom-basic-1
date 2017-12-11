@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 // const autoprefixer = require('autoprefixer');
 
 module.exports = {
@@ -71,12 +70,6 @@ module.exports = {
     }),
 
     new ExtractTextPlugin("styles.css"),
-
-    new HtmlWebpackPlugin({
-      template: 'client/index.template.html',
-      inject: 'body',
-      filename: 'index.html'
-    }),
 
   ],
 };
