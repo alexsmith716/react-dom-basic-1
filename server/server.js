@@ -7,12 +7,19 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = new express();
-app.use(morgan('dev'));
 
-// app.use(bodyParser.json());
-// app.use('/public', express.static(path.join(__dirname, './public')));
-// app.use(favicon(path.join(__dirname, '../public/static/favicon', 'favicon.ico')));
-// app.use(cors());
+app.use(bodyParser.json());
+app.use('/public', express.static(path.join(__dirname, './public')));
+app.use(favicon(path.join(__dirname, '../public/static/favicon', 'favicon.ico')));
+
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+
+app.use('/public', express.static(path.join(__dirname, './public')));
+app.use(favicon(path.join(__dirname, '../public/static/favicon', 'favicon.ico')));
+
+app.use(morgan('dev'));
+app.use(bodyParser.json());
 
 
 app.use((req, res, next) => {
